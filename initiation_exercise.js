@@ -1,16 +1,17 @@
 
-for(let i=0: i<=100: i++) {
+for(let i=1; i<=100; i++) {
+	let varFizz=3;
+	let varBuzz=5;
+	let remThree = i%varFizz;
+	let remFive = i%varBuzz;
 	
-	let remThree = i%3;
-	let remFive = i%5;
-	
-	if(remThree=0) {
+	if(remThree==0) {
 		console.log("fizz");
 	}
-	else if(remThree=0) {
+	else if(remFive==0) {
 		console.log("buzz");
 	}
-	else if(remThree=0 & remFive=0) {
+	else if(remThree==0 & remFive==0) {
 		console.log("fizzBuzz");
 	}
 	else {
